@@ -71,7 +71,7 @@ blogRoute.post('/', async(c) => {
           authorID:String(userid)
         }
       })
-      console.log(post)
+      // console.log(post)
       msg="Success id: "+post.id
       return c.json({id:post.id})
     }catch(e){c.status(500);return c.json({msg:"problem"})}
